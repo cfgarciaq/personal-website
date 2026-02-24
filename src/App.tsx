@@ -1,11 +1,11 @@
-import NavBar from './components/layout/nav-bar';
+import Navbar from './components/layout/Navbar/Navbar';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <NavBar />
-      <main className="flex min-h-[calc(100vh-72px)] items-center justify-center">
-        <h1 className="text-4xl font-bold text-blue-600">
+    <div className="app-container">
+      <Navbar />
+      <main className="main-content">
+        <h1 className="hero-title">
           Portfolio 2026
         </h1>
       </main>

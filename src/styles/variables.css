@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --bg-primary: #000000;
+  --bg-secondary: #111111;
+  --bg-accent: rgba(0, 0, 0, 0.5);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+  
+  --accent-primary: #3b82f6;
+  --accent-hover: #2563eb;
+  
+  --border-primary: rgba(255, 255, 255, 0.1);
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  /* Layout */
+  --max-width-content: 80rem;
+  --navbar-height: 4rem;
+  
+  /* Effects */
+  --blur-md: 12px;
+  --transition-fast: 0.2s ease;
+}
