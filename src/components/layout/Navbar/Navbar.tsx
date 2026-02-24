@@ -1,6 +1,6 @@
-import React from 'react';
+import './Navbar.css';
 
-const NavBar = () => {
+const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '#' },
     { name: 'Projects', href: '#projects' },
@@ -9,24 +9,21 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/50 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <nav className="navbar">
+      <div className="navbar-container">
         {/* Logo / Name */}
-        <div className="flex items-center">
-          <a href="#" className="text-xl font-bold tracking-tight text-white">
-            Carlos <span className="text-blue-500">García</span>
+        <div className="nav-logo">
+          <a href="#" className="nav-logo-link">
+            Carlos <span className="nav-logo-accent">García</span>
           </a>
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:block">
-          <ul className="flex space-x-8">
+        <div className="nav-desktop">
+          <ul className="nav-links">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a
-                  href={link.href}
-                  className="text-sm font-medium text-gray-300 transition-colors hover:text-white"
-                >
+                <a href={link.href} className="nav-link">
                   {link.name}
                 </a>
               </li>
@@ -35,10 +32,10 @@ const NavBar = () => {
         </div>
 
         {/* Mobile Menu Button (Placeholder for now) */}
-        <div className="md:hidden">
-          <button className="text-gray-300 hover:text-white">
+        <div className="nav-mobile-toggle">
+          <button className="mobile-menu-btn">
             <svg
-              className="h-6 w-6"
+              className="icon-md"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -57,4 +54,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
