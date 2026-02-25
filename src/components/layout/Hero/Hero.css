@@ -15,16 +15,17 @@
 
 .hero-bg-gradient {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  height: 40%;
+  top: 0;
+  left: 0;
+  transform: translate(calc(var(--mouse-x, 50%) - 50%), calc(var(--mouse-y, 50%) - 50%));
+  width: 600px;
+  height: 600px;
   background: var(--hero-gradient);
   filter: blur(var(--blur-lg));
-  opacity: 0.4;
+  opacity: 0.3;
   z-index: 0;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 .hero-container {
