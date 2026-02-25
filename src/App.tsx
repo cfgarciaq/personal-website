@@ -1,13 +1,15 @@
+import React from 'react';
 import Navbar from './components/layout/Navbar/Navbar';
+import Hero from './components/layout/Hero/Hero';
+import About from './components/layout/About/About';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <div className="app-container">
       <Navbar />
       <main className="main-content">
-        <h1 className="hero-title">
-          Portfolio 2026
-        </h1>
+        <Hero />
+        <About />
       </main>
     </div>
   );

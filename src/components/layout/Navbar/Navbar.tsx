@@ -1,10 +1,11 @@
+import React from 'react';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Home', href: '#' },
-    { name: 'Projects', href: '#projects' },
     { name: 'About', href: '#about' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
 
