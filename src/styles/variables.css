@@ -26,9 +26,13 @@
   
   /* Effects */
   --blur-md: 12px;
+  --blur-lg: 120px;
   --transition-fast: 0.3s ease;
 
   /* Fonts */
   --logo-font-family: 'Plus Jakarta Sans', sans-serif;
   --alt-font-family: 'Inter', sans-serif;
+
+  /* Gradients */
+  --hero-gradient: radial-gradient(circle at center, var(--primary-color) 15%, transparent 85%);
 }

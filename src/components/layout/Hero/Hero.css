@@ -1,6 +1,7 @@
 @import "../../../styles/variables.css";
 
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,9 +10,26 @@
   background-color: var(--bg-color);
   padding: var(--spacing-xl);
   text-align: center;
+  overflow: hidden;
+}
+
+.hero-bg-gradient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  background: var(--hero-gradient);
+  filter: blur(var(--blur-lg));
+  opacity: 0.4;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-container {
+  position: relative;
+  z-index: 1;
   max-width: var(--container-width);
   display: flex;
   flex-direction: column;

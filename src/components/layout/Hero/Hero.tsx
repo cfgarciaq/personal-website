@@ -4,6 +4,7 @@ import './Hero.css';
 const Hero: React.FC = () => {
   return (
     <section className="hero">
+      <div className="hero-bg-gradient"></div>
       <div className="hero-container">
         <h1 className="hero-title">
           Carlos <span className="text-gradient">García</span>
