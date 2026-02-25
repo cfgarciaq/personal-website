@@ -27,4 +27,8 @@
   /* Effects */
   --blur-md: 12px;
   --transition-fast: 0.3s ease;
+
+  /* Fonts */
+  --logo-font-family: 'Plus Jakarta Sans', sans-serif;
+  --alt-font-family: 'Inter', sans-serif;
 }
