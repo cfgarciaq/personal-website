@@ -35,4 +35,10 @@
 
   /* Gradients */
   --hero-gradient: radial-gradient(circle at center, var(--primary-color) 15%, transparent 85%);
+
+  /* Tech Colors */
+  --color-css: #663399;
+  --color-dotnet: #512bd4;
+  --color-react: #61dafb;
+  --color-ts: #3178c6;
 }
