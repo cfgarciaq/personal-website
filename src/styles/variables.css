@@ -1,17 +1,16 @@
 :root {
   /* Colors */
-  --bg-primary: #000000;
-  --bg-secondary: #111111;
-  --bg-accent: rgba(0, 0, 0, 0.5);
-  
-  --text-primary: #ffffff;
-  --text-secondary: #d1d5db;
-  --text-muted: #9ca3af;
-  
-  --accent-primary: #3b82f6;
-  --accent-hover: #2563eb;
-  
+  --bg-color: #050505;
+  --bg-accent: rgba(5, 5, 5, 0.8);
+  --surface-color: #111111;
+  --primary-color: #0071e3;
+  --accent-primary: #00d4ff;
   --border-primary: rgba(255, 255, 255, 0.1);
+  --text-main: #ffffff;
+  --text-primary: #ffffff;
+  --text-secondary: #86868b;
+  --text-muted: #86868b;
+  --accent-gradient: linear-gradient(135deg, #0071e3 0%, #00d4ff 100%);
   
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -21,10 +20,25 @@
   --spacing-xl: 2rem;
   
   /* Layout */
-  --max-width-content: 80rem;
+  --container-width: 1100px;
+  --max-width-content: 1100px;
   --navbar-height: 4rem;
   
   /* Effects */
   --blur-md: 12px;
-  --transition-fast: 0.2s ease;
+  --blur-lg: 120px;
+  --transition-fast: 0.3s ease;
+
+  /* Fonts */
+  --logo-font-family: 'Plus Jakarta Sans', sans-serif;
+  --alt-font-family: 'Inter', sans-serif;
+
+  /* Gradients */
+  --hero-gradient: radial-gradient(circle at center, var(--primary-color) 15%, transparent 85%);
+
+  /* Tech Colors */
+  --color-css: #663399;
+  --color-dotnet: #512bd4;
+  --color-react: #61dafb;
+  --color-ts: #3178c6;
 }

@@ -1,13 +1,17 @@
 @import "./variables.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--alt-font-family), system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: dark;
   color: var(--text-primary);
-  background-color: var(--bg-primary);
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
