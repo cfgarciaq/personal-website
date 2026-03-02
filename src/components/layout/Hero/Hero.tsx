@@ -60,9 +60,9 @@ const Hero: React.FC = () => {
         <p className="hero-subtitle">
           Crafting high-performance digital experiences
         </p>
-        <button className="hero-button">
+        <a href="#projects" className="hero-button">
           View Projects
-        </button>
+        </a>
       </div>
     </section>
   );

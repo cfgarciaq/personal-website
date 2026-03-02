@@ -39,6 +39,14 @@
   /* Tech Colors */
   --color-css: #663399;
   --color-dotnet: #512bd4;
+  --color-dotnet-text: #fff;
+  --color-csharp-bg: #A179DC;
+  --color-csharp-dark: #280068;
+  --color-csharp-light: #390091;
+  --color-csharp-text: #ffffff;
   --color-react: #61dafb;
   --color-ts: #3178c6;
+  --color-ts-text: #fff;
+  --color-android: #34A853;
+  --color-android-eyes: #202124;
 }
