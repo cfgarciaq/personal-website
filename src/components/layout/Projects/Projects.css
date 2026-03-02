@@ -1,0 +1,113 @@
+.projects-section {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-primary);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 30px -10px var(--primary-color-alpha, rgba(0, 243, 255, 0.2));
+}
+
+.project-status {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.project-description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.project-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--background-body);
+  border: 1px solid var(--border-primary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.project-tag svg {
+  width: 16px;
+  height: 16px;
+  filter: grayscale(100%) brightness(0.8);
+  transition: all 0.3s ease;
+}
+
+.project-tag:hover {
+  border-color: var(--primary-color);
+  color: var(--text-primary);
+  background: rgba(0, 243, 255, 0.05);
+}
+
+.project-tag:hover svg {
+  filter: grayscale(100%) brightness(1);
+  --logo-csharp-bg: var(--primary-color);
+  --logo-csharp-dark: #cecece;
+  --logo-csharp-light: #e0e0e0;
+  --logo-csharp-text: #ffffff;
+  --logo-ts-text: #ffffff;
+}
