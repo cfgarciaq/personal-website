@@ -25,7 +25,7 @@ const projects: Project[] = [
   },
   {
     title: 'Interactive Advergame (Kinect + Unity)',
-    description: 'An immersive interactive system using computer vision and Kinect SDK to control 3D environments. Developed with C# and Unity to bridge the gap between physical movement and digital interaction.',
+    description: 'An immersive interactive system using computer vision and Kinect SDK to control a 3D charater in 3D environments. Developed with C# and Unity to bridge the gap between physical movement and digital interaction.',
     tags: ['Unity', 'C#', 'Kinect SDK', 'Computer Vision'],
     status: 'Legacy / Showcase',
   },
@@ -42,8 +42,9 @@ const getTagIcon = (tag: string) => {
   if (normalizedTag.includes('react')) return <ReactLogo />;
   if (normalizedTag.includes('typescript')) return <TSLogo />;
   if (normalizedTag.includes('css')) return <CSSLogo />;
-  if (normalizedTag.includes('c#') || normalizedTag.includes('unity')) return <CSharpLogo />;
+  if (normalizedTag.includes('c#')) return <CSharpLogo />;
   if (normalizedTag.includes('android')) return <AndroidLogo />;
+  if (normalizedTag.includes('unity')) return <UnityLogo />;
   
   // Generic code icon for Kotlin, Java, etc.
   return (

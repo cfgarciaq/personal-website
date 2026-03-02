@@ -1,3 +1,5 @@
+@import "../../../styles/variables.css";
+
 .projects-section {
   padding: 6rem 2rem;
   max-width: 1200px;
@@ -105,9 +107,6 @@
 
 .project-tag:hover svg {
   filter: grayscale(100%) brightness(1);
-  --logo-csharp-bg: var(--primary-color);
-  --logo-csharp-dark: #cecece;
-  --logo-csharp-light: #e0e0e0;
-  --logo-csharp-text: #ffffff;
-  --logo-ts-text: #ffffff;
+  --logo-ts-text: #363636;
+  --logo-css-text: #363636;
 }
