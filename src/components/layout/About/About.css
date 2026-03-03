@@ -11,6 +11,7 @@
 .about-container {
   max-width: var(--container-width);
   width: 100%;
+  padding: 0 var(--spacing-md);
 }
 
 .about-title {
@@ -24,6 +25,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-xl);
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -31,6 +33,10 @@
     grid-template-columns: 1.5fr 1fr;
     gap: 4rem;
   }
+}
+
+.about-text {
+  max-width: 100%;
 }
 
 .about-text p {
@@ -50,7 +56,7 @@
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: var(--spacing-sm);
 }
 
