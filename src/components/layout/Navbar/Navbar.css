@@ -1,23 +1,26 @@
 @import "../../../styles/variables.css";
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 50;
-  width: 100%;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 1000;
   border-bottom: 1px solid var(--border-primary);
   background-color: var(--bg-accent);
   backdrop-filter: blur(var(--blur-md));
 }
 
 .navbar-container {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  width: 100%;
   max-width: var(--max-width-content);
+  margin: 0 auto;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-md);
+  padding: 0 var(--spacing-md);
+  height: 4rem; /* Added height for consistency */
 }
 
 @media (min-width: 640px) {

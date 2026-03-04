@@ -1,11 +1,17 @@
 @import "./variables.css";
 
-html {
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
-body {
-  overflow-x: hidden;
+* {
+  box-sizing: border-box;
 }
 
 :root {
@@ -27,7 +33,6 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 /* Accessibility */

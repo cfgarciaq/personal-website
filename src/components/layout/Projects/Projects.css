@@ -3,7 +3,9 @@
 .projects-section {
   padding: 6rem 2rem;
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .projects-title {
@@ -16,9 +18,10 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 400px));
   justify-content: center;
   gap: var(--spacing-lg);
+  width: 100%;
 }
 
 .project-card {
