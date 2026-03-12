@@ -1,0 +1,6 @@
+# Allow all crawlers to scan the entire site
+User-agent: *
+Allow: /
+
+# Sitemap location (to be created later after refactor to Astro)
+# Sitemap: https://www.cfgarciaq.dev/sitemap-index.xml
