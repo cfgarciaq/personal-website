@@ -1,12 +1,19 @@
 import React from 'react';
 import './Projects.css';
 import { 
-  ReactLogo, 
-  TSLogo, 
-  CSSLogo, 
-  CSharpLogo,
-  UnityLogo,
-  AndroidLogo
+  React as ReactLogo, 
+  TS as TSLogo, 
+  CSS as CSSLogo, 
+  CSharp as CSharpLogo,
+  Unity as UnityLogo,
+  Android as AndroidLogo,
+  TailwindCSS,
+  ShadcnUI,
+  PostgreSQL,
+  Supabase,
+  Vercel,
+  Render,
+  DOTNET
 } from '../../common/TechLogos/TechLogos';
 
 interface Project {
@@ -14,9 +21,17 @@ interface Project {
   description: string;
   tags: string[];
   status: string;
+  url?: string;
 }
 
 const projects: Project[] = [
+  {
+    title: 'SMART REPAIR',
+    description: 'A full-stack repair management system with a premium "Obsidian" aesthetic. Features advanced search, sorting, and pagination, built with a robust .NET 8 API and a modern React 19 frontend.',
+    tags: ['.NET', 'React 19', 'TypeScript', 'Tailwind CSS', 'Shadcn UI', 'PostgreSQL', 'Supabase', 'Vercel', 'Render'],
+    status: 'In Production',
+    url: 'https://smart-repair-ui.vercel.app/'
+  },
   {
     title: 'Liquid Crystal Portfolio',
     description: 'Personal portfolio and engineering showcase. An exploration of React 19 features, TypeScript type-safety, and high-performance UI patterns through dynamic CSS variable manipulation.',
@@ -45,6 +60,13 @@ const getTagIcon = (tag: string) => {
   if (normalizedTag.includes('c#')) return <CSharpLogo />;
   if (normalizedTag.includes('android')) return <AndroidLogo />;
   if (normalizedTag.includes('unity')) return <UnityLogo />;
+  if (normalizedTag.includes('.net')) return <DOTNET />;
+  if (normalizedTag.includes('tailwind')) return <TailwindCSS />;
+  if (normalizedTag.includes('shadcn')) return <ShadcnUI />;
+  if (normalizedTag.includes('postgresql')) return <PostgreSQL />;
+  if (normalizedTag.includes('supabase')) return <Supabase />;
+  if (normalizedTag.includes('vercel')) return <Vercel />;
+  if (normalizedTag.includes('render')) return <Render />;
   
   // Generic code icon for Kotlin, Java, etc.
   return (
@@ -63,7 +85,15 @@ const Projects: React.FC = () => {
         {projects.map((project, index) => (
           <div key={index} className="project-card">
             <span className="project-status">{project.status}</span>
-            <h3 className="project-title">{project.title}</h3>
+            <h3 className="project-title">
+              {project.url ? (
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-link">
+                  {project.title}
+                </a>
+              ) : (
+                project.title
+              )}
+            </h3>
             <p className="project-description">{project.description}</p>
             <div className="project-tags">
               {project.tags.map((tag, tagIndex) => (
