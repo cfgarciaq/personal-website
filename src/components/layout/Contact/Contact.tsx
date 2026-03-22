@@ -1,43 +1,39 @@
 import React from 'react';
 import './Contact.css';
-import { GitHubLogo, LinkedInLogo } from '../../common/TechLogos/TechLogos';
+import { GitHub, LinkedIn } from '../../common/TechLogos/TechLogos';
 
 const Contact: React.FC = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="contact">
       <div className="contact-container">
-        <h2 className="contact-title">Let's build something together</h2>
+        <h2 className="contact-title">Get In Touch</h2>
         <p className="contact-description">
-          I’m always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+          I'm always open to new opportunities and collaborations. 
+          Whether you have a question or just want to say hi, 
+          I'll try my best to get back to you!
         </p>
-
-        <div className="social-buttons">
+        
+        <div className="contact-links">
           <a 
-            href="https://linkedin.com/in/cfgarciaquiroga" 
+            href="https://linkedin.com/in/cfgarcia" 
             target="_blank" 
-            rel="noopener noreferrer" 
-            className="social-button linkedin"
+            rel="noopener noreferrer"
+            className="contact-link linkedin"
           >
-            <LinkedInLogo width={40} height={40} />
+            <LinkedIn width={40} height={40} />
             <span>LinkedIn</span>
           </a>
+          
           <a 
-            href="https://github.com/cfgarciaq" 
+            href="https://github.com/cfgarcia" 
             target="_blank" 
-            rel="noopener noreferrer" 
-            className="social-button github"
+            rel="noopener noreferrer"
+            className="contact-link github"
           >
-            <GitHubLogo width={40} height={40} />
+            <GitHub width={40} height={40} />
             <span>GitHub</span>
           </a>
         </div>
-
-        <footer className="footer">
-          <p>&copy; {currentYear} Carlos García. All rights reserved.</p>
-          <p>Built with React 19 & TypeScript</p>
-        </footer>
       </div>
     </section>
   );

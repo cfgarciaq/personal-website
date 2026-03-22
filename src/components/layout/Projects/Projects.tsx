@@ -1,12 +1,12 @@
 import React from 'react';
 import './Projects.css';
 import { 
-  React as ReactLogo, 
-  TS as TSLogo, 
-  CSS as CSSLogo, 
-  CSharp as CSharpLogo,
-  Unity as UnityLogo,
-  Android as AndroidLogo,
+  React as ReactIcon, 
+  TS as TSIcon, 
+  CSS as CSSIcon, 
+  CSharp as CSharpIcon,
+  Unity as UnityIcon,
+  Android as AndroidIcon,
   TailwindCSS,
   ShadcnUI,
   PostgreSQL,
@@ -54,12 +54,12 @@ const projects: Project[] = [
 
 const getTagIcon = (tag: string) => {
   const normalizedTag = tag.toLowerCase();
-  if (normalizedTag.includes('react')) return <ReactLogo />;
-  if (normalizedTag.includes('typescript')) return <TSLogo />;
-  if (normalizedTag.includes('css')) return <CSSLogo />;
-  if (normalizedTag.includes('c#')) return <CSharpLogo />;
-  if (normalizedTag.includes('android')) return <AndroidLogo />;
-  if (normalizedTag.includes('unity')) return <UnityLogo />;
+  if (normalizedTag.includes('react')) return <ReactIcon />;
+  if (normalizedTag.includes('typescript')) return <TSIcon />;
+  if (normalizedTag.includes('css')) return <CSSIcon />;
+  if (normalizedTag.includes('c#')) return <CSharpIcon />;
+  if (normalizedTag.includes('android')) return <AndroidIcon />;
+  if (normalizedTag.includes('unity')) return <UnityIcon />;
   if (normalizedTag.includes('.net')) return <DOTNET />;
   if (normalizedTag.includes('tailwind')) return <TailwindCSS />;
   if (normalizedTag.includes('shadcn')) return <ShadcnUI />;

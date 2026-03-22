@@ -1,10 +1,10 @@
 import React from 'react';
 import './About.css';
 import { 
-  React as ReactLogo, 
-  CSS as CSSLogo, 
-  TS as TSLogo, 
-  DOTNET as DOTNETLogo,
+  React as ReactIcon, 
+  CSS as CSSIcon, 
+  TS as TSIcon, 
+  DOTNET as DOTNETIcon,
   TailwindCSS,
   PostgreSQL,
   Supabase,
@@ -35,19 +35,19 @@ const About: React.FC = () => {
             <h3>Core Stack</h3>
             <ul className="stack-list">
               <li className="stack-item react">
-                <ReactLogo className="tech-icon react-icon" width={24} height={24} />
+                <ReactIcon className="tech-icon react-icon" width={24} height={24} />
                 React 19
               </li>
               <li className="stack-item ts">
-                <TSLogo className="tech-icon ts-icon" width={24} height={24} />
+                <TSIcon className="tech-icon ts-icon" width={24} height={24} />
                 TypeScript
               </li>
               <li className="stack-item css">
-                <CSSLogo className="tech-icon css-icon" width={24} height={24} />
+                <CSSIcon className="tech-icon css-icon" width={24} height={24} />
                 Modern CSS
               </li>
               <li className="stack-item dotnet">
-                <DOTNETLogo className="tech-icon dotnet-icon" width={24} height={24} />
+                <DOTNETIcon className="tech-icon dotnet-icon" width={24} height={24} />
                 .NET / C#
               </li>
             </ul>
