@@ -125,3 +125,49 @@
 .stack-item.dotnet:hover .tech-icon {
   color: var(--color-dotnet);
 }
+
+.tech-icon-group {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+/* Tailwind Hover */
+.stack-item.tailwind:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+}
+.stack-item.tailwind:hover .tech-icon {
+  color: #38bdf8;
+}
+
+/* PostgreSQL Hover */
+.stack-item.postgres:hover {
+  border-color: #336791;
+  box-shadow: 0 0 15px rgba(51, 103, 145, 0.2);
+  color: #336791;
+}
+.stack-item.postgres:hover .tech-icon {
+  color: #336791;
+}
+
+/* Supabase Hover */
+.stack-item.supabase:hover {
+  border-color: #3ecf8e;
+  box-shadow: 0 0 15px rgba(62, 207, 142, 0.2);
+  color: #3ecf8e;
+}
+.stack-item.supabase:hover .tech-icon {
+  color: #3ecf8e;
+}
+
+/* Vercel Hover */
+.stack-item.vercel:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 15px var(--primary-color-alpha);
+  color: var(--primary-color);
+}
+.stack-item.vercel:hover .tech-icon {
+  color: var(--primary-color);
+}

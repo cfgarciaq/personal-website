@@ -1,6 +1,16 @@
 import React from 'react';
 import './About.css';
-import { ReactLogo, CSSLogo, TSLogo, DOTNETLogo } from '../../common/TechLogos/TechLogos';
+import { 
+  React as ReactLogo, 
+  CSS as CSSLogo, 
+  TS as TSLogo, 
+  DOTNET as DOTNETLogo,
+  TailwindCSS,
+  PostgreSQL,
+  Supabase,
+  Vercel,
+  Render
+} from '../../common/TechLogos/TechLogos';
 
 const About: React.FC = () => {
   return (
@@ -41,6 +51,29 @@ const About: React.FC = () => {
                 .NET / C#
               </li>
             </ul>
+            
+            <h3 style={{ marginTop: '2rem' }}>Tools & Infrastructure</h3>
+            <ul className="stack-list">
+              <li className="stack-item tailwind">
+                <TailwindCSS className="tech-icon tailwind-icon" width={24} height={24} />
+                Tailwind CSS
+              </li>
+              <li className="stack-item postgres">
+                <PostgreSQL className="tech-icon postgres-icon" width={24} height={24} />
+                PostgreSQL
+              </li>
+              <li className="stack-item supabase">
+                <Supabase className="tech-icon supabase-icon" width={24} height={24} />
+                Supabase
+              </li>
+              <li className="stack-item vercel">
+                <div className="tech-icon-group">
+                  <Vercel className="tech-icon vercel-icon" width={24} height={24} />
+                  <Render className="tech-icon render-icon" width={24} height={24} />
+                </div>
+                Vercel / Render
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -49,5 +82,3 @@ const About: React.FC = () => {
 };
 
 export default About;
-
-
