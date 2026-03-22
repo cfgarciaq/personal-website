@@ -9,7 +9,9 @@ import {
   PostgreSQL,
   Supabase,
   Vercel,
-  Render
+  Render,
+  KiloCode,
+  GitHubCopilot
 } from '../../common/TechLogos/TechLogos';
 
 const About: React.FC = () => {
@@ -72,6 +74,18 @@ const About: React.FC = () => {
                   <Render className="tech-icon render-icon" width={24} height={24} />
                 </div>
                 Vercel / Render
+              </li>
+            </ul>
+
+            <h3 style={{ marginTop: '2rem' }}>AI & Agentic Development</h3>
+            <ul className="stack-list">
+              <li className="stack-item kilocode">
+                <KiloCode className="tech-icon kilocode-icon" width={24} height={24} />
+                Kilo Code
+              </li>
+              <li className="stack-item copilot">
+                <GitHubCopilot className="tech-icon copilot-icon" width={24} height={24} />
+                GitHub Copilot
               </li>
             </ul>
           </div>

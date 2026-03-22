@@ -137,6 +137,7 @@
   border-color: #38bdf8;
   box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
   color: #38bdf8;
+  --logo-tailwindcss-color: #38bdf8;
 }
 .stack-item.tailwind:hover .tech-icon {
   color: #38bdf8;
@@ -147,6 +148,7 @@
   border-color: #336791;
   box-shadow: 0 0 15px rgba(51, 103, 145, 0.2);
   color: #336791;
+  --logo-postgresql-color: #336791;
 }
 .stack-item.postgres:hover .tech-icon {
   color: #336791;
@@ -157,6 +159,7 @@
   border-color: #3ecf8e;
   box-shadow: 0 0 15px rgba(62, 207, 142, 0.2);
   color: #3ecf8e;
+  --logo-supabase-color: #3ecf8e;
 }
 .stack-item.supabase:hover .tech-icon {
   color: #3ecf8e;
@@ -166,8 +169,30 @@
 .stack-item.vercel:hover {
   border-color: var(--primary-color);
   box-shadow: 0 0 15px var(--primary-color-alpha);
-  color: var(--primary-color);
+  color: var(--text-primary);
+  --logo-vercel-color: var(--primary-color);
+  --logo-render-color: var(--primary-color);
 }
 .stack-item.vercel:hover .tech-icon {
   color: var(--primary-color);
+}
+
+/* Kilo Code Hover */
+.stack-item.kilocode:hover {
+  border-color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.stack-item.kilocode:hover .tech-icon {
+  color: #fff;
+}
+
+/* Copilot Hover */
+.stack-item.copilot:hover {
+  border-color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.stack-item.copilot:hover .tech-icon {
+  color: #fff;
 }

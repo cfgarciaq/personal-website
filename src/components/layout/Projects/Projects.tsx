@@ -13,7 +13,8 @@ import {
   Supabase,
   Vercel,
   Render,
-  DOTNET
+  DOTNET,
+  KiloCode
 } from '../../common/TechLogos/TechLogos';
 
 interface Project {
@@ -28,7 +29,7 @@ const projects: Project[] = [
   {
     title: 'SMART REPAIR',
     description: 'A full-stack repair management system with a premium "Obsidian" aesthetic. Features advanced search, sorting, and pagination, built with a robust .NET 8 API and a modern React 19 frontend.',
-    tags: ['.NET', 'React 19', 'TypeScript', 'Tailwind CSS', 'Shadcn UI', 'PostgreSQL', 'Supabase', 'Vercel', 'Render'],
+    tags: ['.NET', 'React 19', 'TypeScript', 'Tailwind CSS', 'Shadcn UI', 'PostgreSQL', 'Supabase', 'Vercel', 'Render', 'Kilo Code'],
     status: 'In Production',
     url: 'https://smart-repair-ui.vercel.app/'
   },
@@ -67,6 +68,7 @@ const getTagIcon = (tag: string) => {
   if (normalizedTag.includes('supabase')) return <Supabase />;
   if (normalizedTag.includes('vercel')) return <Vercel />;
   if (normalizedTag.includes('render')) return <Render />;
+  if (normalizedTag.includes('kilo code')) return <KiloCode />;
   
   // Generic code icon for Kotlin, Java, etc.
   return (

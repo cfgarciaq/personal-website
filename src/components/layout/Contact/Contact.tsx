@@ -4,7 +4,7 @@ import { GitHub, LinkedIn } from '../../common/TechLogos/TechLogos';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact-section">
       <div className="contact-container">
         <h2 className="contact-title">Get In Touch</h2>
         <p className="contact-description">
@@ -13,12 +13,12 @@ const Contact: React.FC = () => {
           I'll try my best to get back to you!
         </p>
         
-        <div className="contact-links">
+        <div className="social-buttons">
           <a 
             href="https://linkedin.com/in/cfgarcia" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="contact-link linkedin"
+            className="social-button linkedin"
           >
             <LinkedIn width={40} height={40} />
             <span>LinkedIn</span>
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
             href="https://github.com/cfgarcia" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="contact-link github"
+            className="social-button github"
           >
             <GitHub width={40} height={40} />
             <span>GitHub</span>
