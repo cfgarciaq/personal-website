@@ -4,6 +4,8 @@
 The portfolio is a modern React 19 application built with Vite and TypeScript. It features a modular component structure, global CSS variables for styling, and a centralized technology logo system.
 
 ## Last Implemented Features
+- **Vercel Analytics Integration**: Added `@vercel/analytics` to track visitor metrics and performance.
+- **Contact Info Update**: Updated LinkedIn and GitHub profile URLs in the Contact section.
 - **SMART REPAIR Integration**: Added the full-stack project card with "In Production" status, live link, and an external link icon for better UX.
 - **TechLogos Refactor**: Renamed logo components (removed `Logo` suffix) and updated them to use CSS variables for theme-aware coloring.
 - **AI Tech Stack**: Integrated **Kilo Code** and **GitHub Copilot** into the About section with custom brand colors (yellow glow for Kilo Code).
