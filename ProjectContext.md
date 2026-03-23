@@ -1,30 +1,32 @@
 # Project Context: Personal Website / Portfolio 2026
 
 ## Current Project State
-The portfolio is a modern React 19 application built with Vite and TypeScript. It features a modular component structure and uses global CSS variables for styling.
+The portfolio is a modern React 19 application built with Vite and TypeScript. It features a modular component structure, global CSS variables for styling, and a centralized technology logo system.
 
 ## Last Implemented Features
-- **Modular Architecture**: Transitioned to a folder-per-component structure.
-- **Global CSS Variables**: Standardized colors and spacing using CSS Custom Properties.
-- **TechLogos Component**: Centralized SVG icons for technologies.
-- **Responsive Design**: Implemented Hero, About, Projects, and Contact sections.
+- **SMART REPAIR Integration**: Added the full-stack project card with "In Production" status, live link, and an external link icon for better UX.
+- **TechLogos Refactor**: Renamed logo components (removed `Logo` suffix) and updated them to use CSS variables for theme-aware coloring.
+- **AI Tech Stack**: Integrated **Kilo Code** and **GitHub Copilot** into the About section with custom brand colors (yellow glow for Kilo Code).
+- **UX Improvements**: Added external link icons and hover effects to project titles.
+- **Layout Refinement**: Redesigned the About section grid with a two-block layout (Left: Title + Text, Right: Full-height Tech Stack) for better visual balance.
+- **Footer Restoration**: Restored the footer component with a dynamic copyright mark.
+- **Logo Visibility Fixes**: Improved logo visibility in project tags on hover by adjusting stroke and text colors.
 
 ## Pending Technical Debt or Bugs
-- **Logo Component Naming**: Redundant `Logo` suffix in component names (e.g., `ReactLogo`).
-- **Project Links**: Project cards do not yet have external links.
+- **Unit Testing**: Components need comprehensive test coverage.
+- **Performance Optimization**: Review image assets and SVG complexity.
 
 ## Next Immediate Steps
-1. **Refactor TechLogos**: Rename components to remove `Logo` suffix and update theme variables.
-2. **Add SMART REPAIR**: Integrate the new full-stack project into the portfolio.
-3. **Update About Section**: Reflect the new tech stack used in SMART REPAIR.
+1. **Deployment**: Finalize Vercel deployment configuration.
+2. **Content Expansion**: Add more detailed project descriptions or case studies.
 
 ## Infrastructure
 - **Framework:** React 19 (TypeScript)
 - **Styling:** Modern Native CSS
 - **Build Tool:** Vite
-- **Deployment:** Vercel (Planned)
+- **Deployment:** Vercel
 
 ## Git Flow
 - **Main Branch:** Production-ready code.
-- **Develop Branch:** Integration branch (to be created).
-- **Feature Branches:** Created for specific tasks (e.g., `smart-repair`).
+- **Develop Branch:** Integration branch.
+- **Feature Branches**: `smart-repair` (current).
