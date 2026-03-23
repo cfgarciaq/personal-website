@@ -120,10 +120,10 @@
 
 .project-tag:hover {
   border-color: var(--primary-color);
-  color: #000;
-  background: #fff;
-  --logo-postgresql-stroke: #000;
-  --logo-dotnet-text: #000;
+  color: var(--text-primary);
+  background: var(--background-body);
+  --logo-postgresql-stroke: #fff;
+  --logo-dotnet-text: #fff;
 }
 
 .project-tag:hover svg {
