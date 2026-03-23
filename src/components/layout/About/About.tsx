@@ -54,7 +54,7 @@ const About: React.FC = () => {
               </li>
             </ul>
             
-            <h3 style={{ marginTop: '2rem' }}>Tools & Infrastructure</h3>
+            <h3 style={{ marginTop: '1.5rem' }}>Tools & Infrastructure</h3>
             <ul className="stack-list">
               <li className="stack-item tailwind">
                 <TailwindCSS className="tech-icon tailwind-icon" width={24} height={24} />
@@ -77,7 +77,7 @@ const About: React.FC = () => {
               </li>
             </ul>
 
-            <h3 style={{ marginTop: '2rem' }}>AI & Agentic Development</h3>
+            <h3 style={{ marginTop: '1.5rem' }}>AI & Agentic Development</h3>
             <ul className="stack-list">
               <li className="stack-item kilocode">
                 <KiloCode className="tech-icon kilocode-icon" width={24} height={24} />
