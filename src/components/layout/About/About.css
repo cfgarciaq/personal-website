@@ -166,6 +166,7 @@
 }
 .stack-item.postgres:hover .tech-icon {
   color: #336791;
+  --logo-postgresql-stroke: #fff;
 }
 
 /* Supabase Hover */

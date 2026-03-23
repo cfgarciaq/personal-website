@@ -173,7 +173,7 @@ export const PostgreSQL = (props: SVGProps<SVGSVGElement>) => (
         fillRule: "nonzero",
         clipRule: "nonzero",
         fill: "none",
-        stroke: "#fff",
+        stroke: "var(--logo-postgresql-stroke, #fff)",
         strokeWidth: "12.4651",
         strokeLinecap: "round",
         strokeLinejoin: "round",
@@ -205,7 +205,7 @@ export const PostgreSQL = (props: SVGProps<SVGSVGElement>) => (
       <path
         d="M172.517 141.7c-.288 2.039 3.733 7.48 8.976 8.207 5.234.73 9.714-3.522 9.998-5.559.284-2.039-3.732-4.285-8.977-5.015-5.237-.731-9.719.333-9.996 2.367z"
         style={{
-          fill: "var(--logo-postgresql-stroke, #fff)",
+          fill: "#fff",
           strokeWidth: "4.155",
           strokeLinecap: "butt",
           strokeLinejoin: "miter",
@@ -214,7 +214,7 @@ export const PostgreSQL = (props: SVGProps<SVGSVGElement>) => (
       <path
         d="M331.941 137.543c.284 2.039-3.732 7.48-8.976 8.207-5.238.73-9.718-3.522-10.005-5.559-.277-2.039 3.74-4.285 8.979-5.015 5.239-.73 9.718.333 10.002 2.368z"
         style={{
-          fill: "var(--logo-postgresql-stroke, #fff)",
+          fill: "#fff",
           strokeWidth: "2.0775",
           strokeLinecap: "butt",
           strokeLinejoin: "miter",

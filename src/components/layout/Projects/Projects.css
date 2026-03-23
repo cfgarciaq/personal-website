@@ -122,12 +122,12 @@
   border-color: var(--primary-color);
   color: var(--text-primary);
   background: var(--background-body);
-  --logo-postgresql-stroke: #fff;
-  --logo-dotnet-text: #fff;
 }
 
 .project-tag:hover svg {
   filter: grayscale(100%) brightness(1);
   --logo-ts-text: #363636;
   --logo-css-text: #363636;
+  --logo-postgresql-stroke: #363636;
+  --logo-dotnet-text: #363636;
 }
