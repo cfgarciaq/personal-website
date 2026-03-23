@@ -29,7 +29,7 @@ const projects: Project[] = [
   {
     title: 'SMART REPAIR',
     description: 'A full-stack repair management system with a premium "Obsidian" aesthetic. Features advanced search, sorting, and pagination, built with a robust .NET 8 API and a modern React 19 frontend.',
-    tags: ['.NET', 'React 19', 'TypeScript', 'Tailwind CSS', 'Shadcn UI', 'PostgreSQL', 'Supabase', 'Vercel', 'Render', 'Kilo Code'],
+    tags: ['.NET', 'React 19', 'TypeScript', 'Tailwind', 'Shadcn/UI', 'PostgreSQL', 'Supabase', 'Vercel', 'Render', 'Kilo Code'],
     status: 'In Production',
     url: 'https://smart-repair-ui.vercel.app/'
   },
@@ -63,7 +63,7 @@ const getTagIcon = (tag: string) => {
   if (normalizedTag.includes('unity')) return <UnityIcon />;
   if (normalizedTag.includes('.net')) return <DOTNET />;
   if (normalizedTag.includes('tailwind')) return <TailwindCSS />;
-  if (normalizedTag.includes('shadcn')) return <ShadcnUI />;
+  if (normalizedTag.includes('shadcn/ui')) return <ShadcnUI />;
   if (normalizedTag.includes('postgresql')) return <PostgreSQL />;
   if (normalizedTag.includes('supabase')) return <Supabase />;
   if (normalizedTag.includes('vercel')) return <Vercel />;
@@ -91,6 +91,11 @@ const Projects: React.FC = () => {
               {project.url ? (
                 <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-link">
                   {project.title}
+                  <svg className="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
                 </a>
               ) : (
                 project.title
