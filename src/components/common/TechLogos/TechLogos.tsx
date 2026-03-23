@@ -205,7 +205,7 @@ export const PostgreSQL = (props: SVGProps<SVGSVGElement>) => (
       <path
         d="M172.517 141.7c-.288 2.039 3.733 7.48 8.976 8.207 5.234.73 9.714-3.522 9.998-5.559.284-2.039-3.732-4.285-8.977-5.015-5.237-.731-9.719.333-9.996 2.367z"
         style={{
-          fill: "#fff",
+          fill: "var(--logo-postgresql-stroke, #fff)",
           strokeWidth: "4.155",
           strokeLinecap: "butt",
           strokeLinejoin: "miter",
@@ -214,7 +214,7 @@ export const PostgreSQL = (props: SVGProps<SVGSVGElement>) => (
       <path
         d="M331.941 137.543c.284 2.039-3.732 7.48-8.976 8.207-5.238.73-9.718-3.522-10.005-5.559-.277-2.039 3.74-4.285 8.979-5.015 5.239-.73 9.718.333 10.002 2.368z"
         style={{
-          fill: "#fff",
+          fill: "var(--logo-postgresql-stroke, #fff)",
           strokeWidth: "2.0775",
           strokeLinecap: "butt",
           strokeLinejoin: "miter",
@@ -227,7 +227,7 @@ export const PostgreSQL = (props: SVGProps<SVGSVGElement>) => (
 
 
 export const KiloCode = (props: SVGProps<SVGSVGElement>) => (
-  <svg {...props} viewBox="0 0 32 32" fill="currentColor">
+  <svg {...props} viewBox="0 0 32 32" fill="var(--logo-kilocode-color, currentColor)">
     <path d="M23,26v-2h3v-5l-2-2h-4v2h-3v5l2,2h4ZM20,20h3v3h-3v-3Z" />
     <rect x="12" y="17" width="3" height="3" />
     <polygon points="26 12 23 12 23 9 20 6 17 6 17 9 20 9 20 12 17 12 17 15 26 15 26 12" />

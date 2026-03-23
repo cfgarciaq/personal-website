@@ -15,13 +15,6 @@
   padding: 0 var(--spacing-md);
 }
 
-.about-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: var(--spacing-xl);
-  letter-spacing: -0.02em;
-}
-
 .about-content {
   display: grid;
   grid-template-columns: 1fr;
@@ -37,6 +30,19 @@
   }
 }
 
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0;
+  letter-spacing: -0.02em;
+}
+
 .about-text {
   max-width: 100%;
 }
@@ -46,6 +52,11 @@
   line-height: 1.7;
   color: var(--text-secondary);
   margin-bottom: var(--spacing-md);
+}
+
+.about-stack {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-stack h3 {
@@ -88,6 +99,12 @@
   transform: translateY(-2px);
 }
 
+.tech-icon-group {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
 /* React Hover */
 .stack-item.react:hover {
   border-color: var(--color-react);
@@ -128,12 +145,6 @@
   color: var(--color-dotnet);
 }
 
-.tech-icon-group {
-  display: flex;
-  gap: 0.25rem;
-  align-items: center;
-}
-
 /* Tailwind Hover */
 .stack-item.tailwind:hover {
   border-color: #38bdf8;
@@ -151,6 +162,7 @@
   box-shadow: 0 0 15px rgba(51, 103, 145, 0.2);
   color: #336791;
   --logo-postgresql-color: #336791;
+  --logo-postgresql-stroke: #336791;
 }
 .stack-item.postgres:hover .tech-icon {
   color: #336791;
@@ -181,12 +193,13 @@
 
 /* Kilo Code Hover */
 .stack-item.kilocode:hover {
-  border-color: #fff;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-  color: #fff;
+  border-color: #FAF74F;
+  box-shadow: 0 0 15px rgba(250, 247, 79, 0.3);
+  color: #FAF74F;
+  --logo-kilocode-color: #FAF74F;
 }
 .stack-item.kilocode:hover .tech-icon {
-  color: #fff;
+  color: #FAF74F;
 }
 
 /* Copilot Hover */
