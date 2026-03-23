@@ -58,6 +58,31 @@
   color: var(--text-primary);
 }
 
+.project-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-link:hover {
+  color: var(--primary-color);
+}
+
+.external-link-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  opacity: 0.6;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-link:hover .external-link-icon {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
 .project-description {
   font-size: 1rem;
   color: var(--text-secondary);
@@ -96,11 +121,13 @@
 .project-tag:hover {
   border-color: var(--primary-color);
   color: var(--text-primary);
-  background: rgba(0, 243, 255, 0.05);
+  background: var(--background-body);
 }
 
 .project-tag:hover svg {
   filter: grayscale(100%) brightness(1);
   --logo-ts-text: #363636;
   --logo-css-text: #363636;
+  --logo-postgresql-stroke: #363636;
+  --logo-dotnet-text: #363636;
 }

@@ -4,6 +4,7 @@ import Hero from './components/layout/Hero/Hero';
 import About from './components/layout/About/About';
 import Projects from './components/layout/Projects/Projects';
 import Contact from './components/layout/Contact/Contact';
+import Footer from './components/layout/Footer/Footer';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 };

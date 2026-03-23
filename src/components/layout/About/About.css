@@ -15,25 +15,32 @@
   padding: 0 var(--spacing-md);
 }
 
-.about-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: var(--spacing-xl);
-  letter-spacing: -0.02em;
-}
-
 .about-content {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-xl);
   max-width: 100%;
+  align-items: start;
 }
 
 @media (min-width: 768px) {
   .about-content {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: 4rem;
   }
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0;
+  letter-spacing: -0.02em;
 }
 
 .about-text {
@@ -47,17 +54,23 @@
   margin-bottom: var(--spacing-md);
 }
 
+.about-stack {
+  display: flex;
+  flex-direction: column;
+}
+
 .about-stack h3 {
-  font-size: 1.5rem;
-  margin-bottom: var(--spacing-md);
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
   color: var(--text-primary);
+  opacity: 0.9;
 }
 
 .stack-list {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: var(--spacing-sm);
 }
 
@@ -84,6 +97,12 @@
 
 .stack-item:hover {
   transform: translateY(-2px);
+}
+
+.tech-icon-group {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
 }
 
 /* React Hover */
@@ -124,4 +143,72 @@
 }
 .stack-item.dotnet:hover .tech-icon {
   color: var(--color-dotnet);
+}
+
+/* Tailwind Hover */
+.stack-item.tailwind:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+  --logo-tailwindcss-color: #38bdf8;
+}
+.stack-item.tailwind:hover .tech-icon {
+  color: #38bdf8;
+}
+
+/* PostgreSQL Hover */
+.stack-item.postgres:hover {
+  border-color: #336791;
+  box-shadow: 0 0 15px rgba(51, 103, 145, 0.2);
+  color: #336791;
+  --logo-postgresql-color: #336791;
+  --logo-postgresql-stroke: #336791;
+}
+.stack-item.postgres:hover .tech-icon {
+  color: #336791;
+  --logo-postgresql-stroke: #fff;
+}
+
+/* Supabase Hover */
+.stack-item.supabase:hover {
+  border-color: #3ecf8e;
+  box-shadow: 0 0 15px rgba(62, 207, 142, 0.2);
+  color: #3ecf8e;
+  --logo-supabase-color: #3ecf8e;
+}
+.stack-item.supabase:hover .tech-icon {
+  color: #3ecf8e;
+}
+
+/* Vercel Hover */
+.stack-item.vercel:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 15px var(--primary-color-alpha);
+  color: var(--text-primary);
+  --logo-vercel-color: var(--primary-color);
+  --logo-render-color: var(--primary-color);
+}
+.stack-item.vercel:hover .tech-icon {
+  color: var(--primary-color);
+}
+
+/* Kilo Code Hover */
+.stack-item.kilocode:hover {
+  border-color: #FAF74F;
+  box-shadow: 0 0 15px rgba(250, 247, 79, 0.3);
+  color: #FAF74F;
+  --logo-kilocode-color: #FAF74F;
+}
+.stack-item.kilocode:hover .tech-icon {
+  color: #FAF74F;
+}
+
+/* Copilot Hover */
+.stack-item.copilot:hover {
+  border-color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.stack-item.copilot:hover .tech-icon {
+  color: #fff;
 }

@@ -1,12 +1,20 @@
 import React from 'react';
 import './Projects.css';
 import { 
-  ReactLogo, 
-  TSLogo, 
-  CSSLogo, 
-  CSharpLogo,
-  UnityLogo,
-  AndroidLogo
+  React as ReactIcon, 
+  TS as TSIcon, 
+  CSS as CSSIcon, 
+  CSharp as CSharpIcon,
+  Unity as UnityIcon,
+  Android as AndroidIcon,
+  TailwindCSS,
+  ShadcnUI,
+  PostgreSQL,
+  Supabase,
+  Vercel,
+  Render,
+  DOTNET,
+  KiloCode
 } from '../../common/TechLogos/TechLogos';
 
 interface Project {
@@ -14,13 +22,21 @@ interface Project {
   description: string;
   tags: string[];
   status: string;
+  url?: string;
 }
 
 const projects: Project[] = [
   {
-    title: 'Liquid Crystal Portfolio',
+    title: 'SMART REPAIR',
+    description: 'A full-stack repair management system. Features advanced search, sorting, and pagination, built with a .NET 8 API and React 19. Developed using Kilo Code agentic workflows for optimized architecture.',
+    tags: ['.NET', 'React 19', 'TypeScript', 'Tailwind', 'Shadcn/UI', 'PostgreSQL', 'Supabase', 'Vercel', 'Render', 'Kilo Code'],
+    status: 'In Production',
+    url: 'https://smart-repair-ui.vercel.app/'
+  },
+  {
+    title: 'Modern Web Portfolio',
     description: 'Personal portfolio and engineering showcase. An exploration of React 19 features, TypeScript type-safety, and high-performance UI patterns through dynamic CSS variable manipulation.',
-    tags: ['React 19', 'TypeScript', 'Modern CSS'],
+    tags: ['React 19', 'TypeScript', 'Modern CSS', 'Vercel'],
     status: 'In Production',
   },
   {
@@ -28,6 +44,7 @@ const projects: Project[] = [
     description: 'An immersive interactive system using computer vision and Kinect SDK to control a 3D charater in 3D environments. Developed with C# and Unity to bridge the gap between physical movement and digital interaction.',
     tags: ['Unity', 'C#', 'Kinect SDK', 'Computer Vision'],
     status: 'Legacy / Showcase',
+    url: 'https://www.youtube.com/watch?v=RY2VnnNOhbw'
   },
   {
     title: 'Accessible Mobile Game',
@@ -39,12 +56,20 @@ const projects: Project[] = [
 
 const getTagIcon = (tag: string) => {
   const normalizedTag = tag.toLowerCase();
-  if (normalizedTag.includes('react')) return <ReactLogo />;
-  if (normalizedTag.includes('typescript')) return <TSLogo />;
-  if (normalizedTag.includes('css')) return <CSSLogo />;
-  if (normalizedTag.includes('c#')) return <CSharpLogo />;
-  if (normalizedTag.includes('android')) return <AndroidLogo />;
-  if (normalizedTag.includes('unity')) return <UnityLogo />;
+  if (normalizedTag.includes('react')) return <ReactIcon />;
+  if (normalizedTag.includes('typescript')) return <TSIcon />;
+  if (normalizedTag.includes('css')) return <CSSIcon />;
+  if (normalizedTag.includes('c#')) return <CSharpIcon />;
+  if (normalizedTag.includes('android')) return <AndroidIcon />;
+  if (normalizedTag.includes('unity')) return <UnityIcon />;
+  if (normalizedTag.includes('.net')) return <DOTNET />;
+  if (normalizedTag.includes('tailwind')) return <TailwindCSS />;
+  if (normalizedTag.includes('shadcn/ui')) return <ShadcnUI />;
+  if (normalizedTag.includes('postgresql')) return <PostgreSQL />;
+  if (normalizedTag.includes('supabase')) return <Supabase />;
+  if (normalizedTag.includes('vercel')) return <Vercel />;
+  if (normalizedTag.includes('render')) return <Render />;
+  if (normalizedTag.includes('kilo code')) return <KiloCode />;
   
   // Generic code icon for Kotlin, Java, etc.
   return (
@@ -63,7 +88,20 @@ const Projects: React.FC = () => {
         {projects.map((project, index) => (
           <div key={index} className="project-card">
             <span className="project-status">{project.status}</span>
-            <h3 className="project-title">{project.title}</h3>
+            <h3 className="project-title">
+              {project.url ? (
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-link">
+                  {project.title}
+                  <svg className="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              ) : (
+                project.title
+              )}
+            </h3>
             <p className="project-description">{project.description}</p>
             <div className="project-tags">
               {project.tags.map((tag, tagIndex) => (

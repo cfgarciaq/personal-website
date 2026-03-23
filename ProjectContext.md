@@ -1,0 +1,32 @@
+# Project Context: Personal Website / Portfolio 2026
+
+## Current Project State
+The portfolio is a modern React 19 application built with Vite and TypeScript. It features a modular component structure, global CSS variables for styling, and a centralized technology logo system.
+
+## Last Implemented Features
+- **SMART REPAIR Integration**: Added the full-stack project card with "In Production" status, live link, and an external link icon for better UX.
+- **TechLogos Refactor**: Renamed logo components (removed `Logo` suffix) and updated them to use CSS variables for theme-aware coloring.
+- **AI Tech Stack**: Integrated **Kilo Code** and **GitHub Copilot** into the About section with custom brand colors (yellow glow for Kilo Code).
+- **UX Improvements**: Added external link icons and hover effects to project titles.
+- **Layout Refinement**: Redesigned the About section grid with a two-block layout (Left: Title + Text, Right: Full-height Tech Stack) for better visual balance.
+- **Footer Restoration**: Restored the footer component with a dynamic copyright mark.
+- **Logo Visibility Fixes**: Improved logo visibility in project tags on hover by adjusting stroke and text colors.
+
+## Pending Technical Debt or Bugs
+- **Unit Testing**: Components need comprehensive test coverage.
+- **Performance Optimization**: Review image assets and SVG complexity.
+
+## Next Immediate Steps
+1. **Deployment**: Finalize Vercel deployment configuration.
+2. **Content Expansion**: Add more detailed project descriptions or case studies.
+
+## Infrastructure
+- **Framework:** React 19 (TypeScript)
+- **Styling:** Modern Native CSS
+- **Build Tool:** Vite
+- **Deployment:** Vercel
+
+## Git Flow
+- **Main Branch:** Production-ready code.
+- **Develop Branch:** Integration branch.
+- **Feature Branches**: `smart-repair` (current).
