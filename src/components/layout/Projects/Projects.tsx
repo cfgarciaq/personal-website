@@ -28,15 +28,15 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'SMART REPAIR',
-    description: 'A full-stack repair management system with a premium "Obsidian" aesthetic. Features advanced search, sorting, and pagination, built with a robust .NET 8 API and a modern React 19 frontend.',
+    description: 'A full-stack repair management system. Features advanced search, sorting, and pagination, built with a .NET 8 API and React 19. Developed using Kilo Code agentic workflows for optimized architecture.',
     tags: ['.NET', 'React 19', 'TypeScript', 'Tailwind', 'Shadcn/UI', 'PostgreSQL', 'Supabase', 'Vercel', 'Render', 'Kilo Code'],
     status: 'In Production',
     url: 'https://smart-repair-ui.vercel.app/'
   },
   {
-    title: 'Liquid Crystal Portfolio',
+    title: 'Modern Web Portfolio',
     description: 'Personal portfolio and engineering showcase. An exploration of React 19 features, TypeScript type-safety, and high-performance UI patterns through dynamic CSS variable manipulation.',
-    tags: ['React 19', 'TypeScript', 'Modern CSS'],
+    tags: ['React 19', 'TypeScript', 'Modern CSS', 'Vercel'],
     status: 'In Production',
   },
   {
@@ -44,6 +44,7 @@ const projects: Project[] = [
     description: 'An immersive interactive system using computer vision and Kinect SDK to control a 3D charater in 3D environments. Developed with C# and Unity to bridge the gap between physical movement and digital interaction.',
     tags: ['Unity', 'C#', 'Kinect SDK', 'Computer Vision'],
     status: 'Legacy / Showcase',
+    url: 'https://www.youtube.com/watch?v=RY2VnnNOhbw'
   },
   {
     title: 'Accessible Mobile Game',
