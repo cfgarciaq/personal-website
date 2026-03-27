@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import { GitHub, LinkedIn } from '../../common/TechLogos/TechLogos';
+import { SOCIAL_LINKS } from '../../../constants/Links.ts';
 
 const Contact: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Contact: React.FC = () => {
         
         <div className="social-buttons">
           <a 
-            href="https://www.linkedin.com/in/cfgarciaquiroga"
+            href={ SOCIAL_LINKS.linkedin }
             target="_blank" 
             rel="noopener noreferrer"
             className="social-button linkedin"
@@ -25,7 +26,7 @@ const Contact: React.FC = () => {
           </a>
           
           <a 
-            href="https://github.com/cfgarciaq" 
+            href={ SOCIAL_LINKS.github } 
             target="_blank" 
             rel="noopener noreferrer"
             className="social-button github"

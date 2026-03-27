@@ -4,6 +4,7 @@
 The portfolio is a modern React 19 application built with Vite and TypeScript. It features a modular component structure, global CSS variables for styling, and a centralized technology logo system.
 
 ## Last Implemented Features
+- **Fix/LinkedIn URL**: Corrected LinkedIn profile URL from an incorrect reference (`https://linkedin.com/in/cfgarcia`) to the authentic profile (`https://linkedin.com/in/cfgarciaquiroga`) to ensure professional networking accuracy.
 - **Vercel Analytics Integration**: Added `@vercel/analytics` to track visitor metrics and performance.
 - **Contact Info Update**: Updated LinkedIn and GitHub profile URLs in the Contact section.
 - **SMART REPAIR Integration**: Added the full-stack project card with "In Production" status, live link, and an external link icon for better UX.
@@ -21,6 +22,12 @@ The portfolio is a modern React 19 application built with Vite and TypeScript. I
 ## Next Immediate Steps
 1. **Deployment**: Finalize Vercel deployment configuration.
 2. **Content Expansion**: Add more detailed project descriptions or case studies.
+
+## Core Identity References (DO NOT CHANGE)
+- **LinkedIn:** https://www.linkedin.com/in/cfgarciaquiroga
+- **GitHub:** https://github.com/cfgarciaq
+- **Domain:** https://www.cfgarciaq.dev/
+- **Full Name:** Carlos Felipe García Quiroga
 
 ## Infrastructure
 - **Framework:** React 19 (TypeScript)
