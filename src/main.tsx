@@ -4,11 +4,14 @@ import './styles/main.css'
 import App from './App.tsx'
 
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
     {/* Vercel Analytics */}
     <Analytics />
+    {/* Vercel performance metrics*/}
+    <SpeedInsights/>
   </StrictMode>,
 )
