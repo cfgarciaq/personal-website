@@ -1,4 +1,10 @@
 {
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
   "about": {
     "title": "À Propos de Moi",
     "description1": "Je suis un développeur de logiciels axé sur la création d'expériences numériques de haute qualité et performantes. Mon approche combine la précision technique avec une esthétique moderne, garantissant que chaque projet fonctionne non seulement parfaitement, mais offre également une expérience utilisateur fluide.",
