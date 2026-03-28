@@ -4,6 +4,7 @@
 The portfolio is a modern React 19 application built with Vite and TypeScript. It features a modular component structure, global CSS variables for styling, and a centralized technology logo system.
 
 ## Last Implemented Features
+- **Internationalization (i18n) Foundation**: Implemented `i18next` with support for English, Spanish, and French. Added language detection and a `LanguageSwitcher` component.
 - **Vercel Speed Insights Integration**: Added `@vercel/speed-insights` to monitor real-time performance and Core Web Vitals.
 - **Centralized Links System**: Created `src/constants/Links.ts` as a Single Source of Truth for social media and identity URLs, ensuring consistency across the app.
 - **Fix/LinkedIn URL**: Corrected LinkedIn profile URL from an incorrect reference (`https://linkedin.com/in/cfgarcia`) to the authentic profile (`https://linkedin.com/in/cfgarciaquiroga`) to ensure professional networking accuracy.
