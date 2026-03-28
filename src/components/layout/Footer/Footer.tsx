@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Footer.css';
-import LanguageSwitcher from '../../common/LanguageSwitcher/LanguageSwitcher';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +12,6 @@ const Footer: React.FC = () => {
         <p className="copyright">
           &copy; {currentYear} Carlos García. {t('footer.rights')}
         </p>
-        <LanguageSwitcher />
       </div>
     </footer>
   );

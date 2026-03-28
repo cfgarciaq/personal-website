@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import './Navbar.css';
+import DesktopMenu from './DesktopMenu';
+import MobileMenu from './MobileMenu';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const { t } = useTranslation();
-
-  const navLinks = [
-    { name: t('nav.home'), href: '#' },
-    { name: t('nav.about'), href: '#about' },
-    { name: t('nav.projects'), href: '#projects' },
-    { name: t('nav.contact'), href: '#contact' },
-  ];
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -22,27 +19,13 @@ const Navbar: React.FC = () => {
       <div className="navbar-container">
         {/* Logo / Name */}
         <div className="nav-logo">
-          <a href="#" className="nav-logo-link">
+          <a href="#" className="nav-logo-link" onClick={closeMenu}>
             Carlos <span className="nav-logo-accent">García</span>
           </a>
         </div>
 
         {/* Desktop Navigation */}
-        <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          <ul className="nav-links">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <a 
-                  href={link.href} 
-                  className="nav-link"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <DesktopMenu />
 
         {/* Mobile Menu Button */}
         <div className="nav-mobile-toggle">
@@ -79,6 +62,9 @@ const Navbar: React.FC = () => {
             </svg>
           </button>
         </div>
+
+        {/* Mobile Navigation Overlay */}
+        <MobileMenu isOpen={isOpen} onClose={closeMenu} />
       </div>
     </nav>
   );
