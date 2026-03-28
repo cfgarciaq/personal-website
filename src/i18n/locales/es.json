@@ -1,0 +1,11 @@
+{
+  "about": {
+    "title": "Sobre Mí",
+    "description1": "Soy un desarrollador de software enfocado en construir experiencias digitales de alta calidad y rendimiento. Mi enfoque combina la precisión técnica con una estética moderna, asegurando que cada proyecto no solo funcione a la perfección, sino que también proporcione una experiencia de usuario fluida.",
+    "description2": "Con experiencia en .NET y pasión por el desarrollo frontend, me esfuerzo por cerrar la brecha entre la lógica robusta del backend e interfaces de usuario elegantes.",
+    "coreStack": "Stack Principal",
+    "toolsInfra": "Herramientas e Infraestructura",
+    "aiAgentic": "IA y Desarrollo Agéntico",
+    "modernCss": "CSS Moderno"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "about": {
+    "title": "About Me",
+    "description1": "I am a software developer focused on building high-quality, performant digital experiences. My approach combines technical precision with a modern aesthetic, ensuring that every project not only works flawlessly but also provides a fluid user experience.",
+    "description2": "With a background in .NET and a passion for frontend development, I strive to bridge the gap between robust backend logic and elegant user interfaces.",
+    "coreStack": "Core Stack",
+    "toolsInfra": "Tools & Infrastructure",
+    "aiAgentic": "AI & Agentic Development",
+    "modernCss": "Modern CSS"
+  }
+}
