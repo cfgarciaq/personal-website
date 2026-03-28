@@ -5,6 +5,9 @@
     "projects": "Projects",
     "contact": "Contact"
   },
+  "footer": {
+    "rights": "All rights reserved."
+  },
   "about": {
     "title": "About Me",
     "description1": "I am a software developer focused on building high-quality, performant digital experiences. My approach combines technical precision with a modern aesthetic, ensuring that every project not only works flawlessly but also provides a fluid user experience.",

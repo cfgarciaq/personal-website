@@ -5,6 +5,9 @@
     "projects": "Proyectos",
     "contact": "Contacto"
   },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
   "about": {
     "title": "Sobre Mí",
     "description1": "Soy un desarrollador de software enfocado en construir experiencias digitales de alta calidad y rendimiento. Mi enfoque combina la precisión técnica con una estética moderna, asegurando que cada proyecto no solo funcione a la perfección, sino que también proporcione una experiencia de usuario fluida.",
