@@ -4,7 +4,8 @@
 The portfolio is a modern React 19 application built with Vite and TypeScript. It features a modular component structure, global CSS variables for styling, and a centralized technology logo system.
 
 ## Last Implemented Features
-- **Navbar Architecture Refactor**: Split the Navbar into modular sub-components (`NavLinks`, `DesktopMenu`, `MobileMenu`, `LanguageSelector`) for better maintainability and cleaner code.
+- **Navbar Architecture Consolidation**: Simplified the Navbar architecture by consolidating sub-components into a single, maintainable file (`Navbar.tsx`), reducing project complexity while keeping the code modular through internal functional components.
+- **Mobile UI Fixes**: Corrected the visibility of the mobile menu button by ensuring proper color contrast and explicit icon styling in `Navbar.css`.
 - **Integrated Language Selector (UX Option B)**: Moved the language switcher from the footer to the Navbar. It now features a minimal design with EN/ES/FR codes, integrated into the desktop view and mobile overlay.
 - **Internationalization (i18n) Foundation**: Implemented `i18next` with support for English, Spanish, and French. Added language detection.
 - **Vercel Speed Insights Integration**: Added `@vercel/speed-insights` to monitor real-time performance and Core Web Vitals.
