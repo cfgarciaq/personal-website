@@ -5,8 +5,9 @@
     "projects": "Projects",
     "contact": "Contact"
   },
-  "footer": {
-    "rights": "All rights reserved."
+  "hero": {
+    "subtitle": "Crafting high-performance digital experiences",
+    "cta": "View Projects"
   },
   "about": {
     "title": "About Me",
@@ -16,5 +17,41 @@
     "toolsInfra": "Tools & Infrastructure",
     "aiAgentic": "AI & Agentic Development",
     "modernCss": "Modern CSS"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "status": {
+      "production": "In Production",
+      "legacy": "Legacy / Showcase",
+      "academic": "Academic Milestone"
+    },
+    "items": {
+      "smartRepair": {
+        "title": "SMART REPAIR",
+        "description": "A full-stack repair management system. Features advanced search, sorting, and pagination, built with a .NET 8 API and React 19. Developed using Kilo Code agentic workflows for optimized architecture."
+      },
+      "portfolio": {
+        "title": "Modern Web Portfolio",
+        "description": "Personal portfolio and engineering showcase. An exploration of React 19 features, TypeScript type-safety, and high-performance UI patterns through dynamic CSS variable manipulation."
+      },
+      "advergame": {
+        "title": "Interactive Advergame (Kinect + Unity)",
+        "description": "An immersive interactive system using computer vision and Kinect SDK to control a 3D charater in 3D environments. Developed with C# and Unity to bridge the gap between physical movement and digital interaction."
+      },
+      "mobileGame": {
+        "title": "Accessible Mobile Game",
+        "description": "Academic milestone focused on inclusive design. Developed an Android educational game in Unity tailored for children with partial visual impairment, featuring high-contrast visual cues and specialized UX."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "I'm always open to new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "present": "Present"
   }
 }

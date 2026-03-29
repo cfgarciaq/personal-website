@@ -5,8 +5,9 @@
     "projects": "Proyectos",
     "contact": "Contacto"
   },
-  "footer": {
-    "rights": "Todos los derechos reservados."
+  "hero": {
+    "subtitle": "Creando experiencias digitales de alto rendimiento",
+    "cta": "Ver Proyectos"
   },
   "about": {
     "title": "Sobre Mí",
@@ -16,5 +17,41 @@
     "toolsInfra": "Herramientas e Infraestructura",
     "aiAgentic": "IA y Desarrollo Agéntico",
     "modernCss": "CSS Moderno"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "status": {
+      "production": "En Producción",
+      "legacy": "Legado / Showcase",
+      "academic": "Hito Académico"
+    },
+    "items": {
+      "smartRepair": {
+        "title": "SMART REPAIR",
+        "description": "Un sistema de gestión de reparaciones full-stack. Incluye búsqueda avanzada, ordenación y paginación, construido con una API .NET 8 y React 19. Desarrollado utilizando flujos de trabajo agénticos de Kilo Code para una arquitectura optimizada."
+      },
+      "portfolio": {
+        "title": "Portafolio Web Moderno",
+        "description": "Portafolio personal y vitrina de ingeniería. Una exploración de las características de React 19, seguridad de tipos con TypeScript y patrones de UI de alto rendimiento mediante la manipulación dinámica de variables CSS."
+      },
+      "advergame": {
+        "title": "Advergame Interactivo (Kinect + Unity)",
+        "description": "Un sistema interactivo inmersivo que utiliza visión por computadora y el SDK de Kinect para controlar un personaje 3D en entornos 3D. Desarrollado con C# y Unity para cerrar la brecha entre el movimiento físico y la interacción digital."
+      },
+      "mobileGame": {
+        "title": "Juego Móvil Accesible",
+        "description": "Hito académico enfocado en el diseño inclusivo. Desarrollé un juego educativo para Android en Unity adaptado para niños con discapacidad visual parcial, con pistas visuales de alto contraste y UX especializada."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Siempre estoy abierto a nuevas oportunidades y colaboraciones. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡haré todo lo posible por responderte!"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "present": "Presente"
   }
 }

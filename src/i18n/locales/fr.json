@@ -5,8 +5,9 @@
     "projects": "Projets",
     "contact": "Contact"
   },
-  "footer": {
-    "rights": "Tous droits réservés."
+  "hero": {
+    "subtitle": "Créer des expériences numériques de haute performance",
+    "cta": "Voir les Projets"
   },
   "about": {
     "title": "À Propos de Moi",
@@ -16,5 +17,41 @@
     "toolsInfra": "Outils & Infrastructure",
     "aiAgentic": "IA & Développement Agentique",
     "modernCss": "CSS Moderne"
+  },
+  "projects": {
+    "title": "Projets Phares",
+    "status": {
+      "production": "En Production",
+      "legacy": "Héritage / Showcase",
+      "academic": "Jalon Académique"
+    },
+    "items": {
+      "smartRepair": {
+        "title": "SMART REPAIR",
+        "description": "Un système de gestion de réparation full-stack. Comprend une recherche avancée, un tri et une pagination, construit avec une API .NET 8 et React 19. Développé à l'aide des flux de travail agentiques Kilo Code pour une architecture optimisée."
+      },
+      "portfolio": {
+        "title": "Portfolio Web Moderne",
+        "description": "Portfolio personnel et vitrine d'ingénierie. Une exploration des fonctionnalités de React 19, de la sécurité des types TypeScript et des modèles d'interface utilisateur haute performance via la manipulation dynamique des variables CSS."
+      },
+      "advergame": {
+        "title": "Advergame Interactif (Kinect + Unity)",
+        "description": "Un système interactif immersif utilisant la vision par ordinateur et le SDK Kinect pour contrôler un personnage 3D dans des environnements 3D. Développé avec C# et Unity pour combler le fossé entre le mouvement physique et l'interaction numérique."
+      },
+      "mobileGame": {
+        "title": "Jeu Mobile Accessible",
+        "description": "Jalon académique axé sur le design inclusif. Développement d'un jeu éducatif Android sous Unity adapté aux enfants malvoyants partiels, avec des indices visuels à fort contraste et une UX spécialisée."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Je suis toujours ouvert à de nouvelles opportunités et collaborations. Que vous ayez une question ou que vous vouliez simplement dire bonjour, je ferai de mon mieux pour vous répondre !"
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  },
+  "common": {
+    "present": "Présent"
   }
 }

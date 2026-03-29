@@ -1,7 +1,9 @@
 import React, { useRef, useCallback, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Hero.css';
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
   const heroRef = useRef<HTMLElement>(null);
   const boundsRef = useRef<{ left: number; top: number; width: number; height: number }>({
     left: 0,
@@ -58,10 +60,10 @@ const Hero: React.FC = () => {
           Carlos <span className="text-gradient">García</span>
         </h1>
         <p className="hero-subtitle">
-          Crafting high-performance digital experiences
+          {t('hero.subtitle')}
         </p>
         <a href="#projects" className="hero-button">
-          View Projects
+          {t('hero.cta')}
         </a>
       </div>
     </section>
