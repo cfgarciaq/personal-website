@@ -31,7 +31,10 @@
 }
 
 .nav-logo-accent {
-  color: var(--accent-color);
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Desktop Menu */
