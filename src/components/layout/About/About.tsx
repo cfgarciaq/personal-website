@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './About.css';
 import { 
   React as ReactIcon, 
@@ -15,29 +16,26 @@ import {
 } from '../../common/TechLogos/TechLogos';
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="about">
       <div className="about-container">
         <div className="about-content">
           <div className="about-left">
-            <h2 className="about-title">About Me</h2>
+            <h2 className="about-title">{t('about.title')}</h2>
             <div className="about-text">
               <p>
-                I am a software developer focused on building high-quality, 
-                performant digital experiences. My approach combines technical 
-                precision with a modern aesthetic, ensuring that every project 
-                not only works flawlessly but also provides a fluid user experience.
+                {t('about.description1')}
               </p>
               <p>
-                With a background in .NET and a passion for frontend development, 
-                I strive to bridge the gap between robust backend logic and 
-                elegant user interfaces.
+                {t('about.description2')}
               </p>
             </div>
           </div>
           
           <div className="about-stack">
-            <h3>Core Stack</h3>
+            <h3>{t('about.coreStack')}</h3>
             <ul className="stack-list">
               <li className="stack-item react">
                 <ReactIcon className="tech-icon react-icon" width={24} height={24} />
@@ -49,7 +47,7 @@ const About: React.FC = () => {
               </li>
               <li className="stack-item css">
                 <CSSIcon className="tech-icon css-icon" width={24} height={24} />
-                Modern CSS
+                {t('about.modernCss')}
               </li>
               <li className="stack-item dotnet">
                 <DOTNETIcon className="tech-icon dotnet-icon" width={24} height={24} />
@@ -57,7 +55,7 @@ const About: React.FC = () => {
               </li>
             </ul>
             
-            <h3 style={{ marginTop: '1.5rem' }}>Tools & Infrastructure</h3>
+            <h3 style={{ marginTop: '1.5rem' }}>{t('about.toolsInfra')}</h3>
             <ul className="stack-list">
               <li className="stack-item tailwind">
                 <TailwindCSS className="tech-icon tailwind-icon" width={24} height={24} />
@@ -80,7 +78,7 @@ const About: React.FC = () => {
               </li>
             </ul>
 
-            <h3 style={{ marginTop: '1.5rem' }}>AI & Agentic Development</h3>
+            <h3 style={{ marginTop: '1.5rem' }}>{t('about.aiAgentic')}</h3>
             <ul className="stack-list">
               <li className="stack-item kilocode">
                 <KiloCode className="tech-icon kilocode-icon" width={24} height={24} />

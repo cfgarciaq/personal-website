@@ -7,6 +7,7 @@ Este proyecto es mi portafolio profesional, diseñado para presentar mi trayecto
 * **Frontend:** React 19 (Hooks, Functional Components)
 * **Lenguaje:** TypeScript (Type-safety estricto)
 * **Estilos:** CSS3 con arquitectura de variables dinámicas
+* **Internacionalización:** Soporte multi-idioma (EN/ES/FR) con `i18next`
 * **Despliegue:** Vercel (CI/CD)
 
 ### Mi Rol en el Proyecto

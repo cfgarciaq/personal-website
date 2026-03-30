@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Projects.css';
 import { 
   React as ReactIcon, 
@@ -18,39 +19,39 @@ import {
 } from '../../common/TechLogos/TechLogos';
 
 interface Project {
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
   tags: string[];
-  status: string;
+  statusKey: string;
   url?: string;
 }
 
 const projects: Project[] = [
   {
-    title: 'SMART REPAIR',
-    description: 'A full-stack repair management system. Features advanced search, sorting, and pagination, built with a .NET 8 API and React 19. Developed using Kilo Code agentic workflows for optimized architecture.',
+    titleKey: 'projects.items.smartRepair.title',
+    descriptionKey: 'projects.items.smartRepair.description',
     tags: ['.NET', 'React 19', 'TypeScript', 'Tailwind', 'Shadcn/UI', 'PostgreSQL', 'Supabase', 'Vercel', 'Render', 'Kilo Code'],
-    status: 'In Production',
+    statusKey: 'projects.status.production',
     url: 'https://smart-repair-ui.vercel.app/'
   },
   {
-    title: 'Modern Web Portfolio',
-    description: 'Personal portfolio and engineering showcase. An exploration of React 19 features, TypeScript type-safety, and high-performance UI patterns through dynamic CSS variable manipulation.',
+    titleKey: 'projects.items.portfolio.title',
+    descriptionKey: 'projects.items.portfolio.description',
     tags: ['React 19', 'TypeScript', 'Modern CSS', 'Vercel'],
-    status: 'In Production',
+    statusKey: 'projects.status.production',
   },
   {
-    title: 'Interactive Advergame (Kinect + Unity)',
-    description: 'An immersive interactive system using computer vision and Kinect SDK to control a 3D charater in 3D environments. Developed with C# and Unity to bridge the gap between physical movement and digital interaction.',
+    titleKey: 'projects.items.advergame.title',
+    descriptionKey: 'projects.items.advergame.description',
     tags: ['Unity', 'C#', 'Kinect SDK', 'Computer Vision'],
-    status: 'Legacy / Showcase',
+    statusKey: 'projects.status.legacy',
     url: 'https://www.youtube.com/watch?v=RY2VnnNOhbw'
   },
   {
-    title: 'Accessible Mobile Game',
-    description: 'Academic milestone focused on inclusive design. Developed an Android educational game in Unity tailored for children with partial visual impairment, featuring high-contrast visual cues and specialized UX.',
+    titleKey: 'projects.items.mobileGame.title',
+    descriptionKey: 'projects.items.mobileGame.description',
     tags: ['Android', 'Unity', 'Game Design'],
-    status: 'Academic Milestone',
+    statusKey: 'projects.status.academic',
   },
 ];
 
@@ -81,17 +82,19 @@ const getTagIcon = (tag: string) => {
 };
 
 const Projects: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="projects" className="projects-section">
-      <h2 className="projects-title">Featured Projects</h2>
+      <h2 className="projects-title">{t('projects.title')}</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
-            <span className="project-status">{project.status}</span>
+            <span className="project-status">{t(project.statusKey)}</span>
             <h3 className="project-title">
               {project.url ? (
                 <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-link">
-                  {project.title}
+                  {t(project.titleKey)}
                   <svg className="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                     <polyline points="15 3 21 3 21 9"></polyline>
@@ -99,14 +102,14 @@ const Projects: React.FC = () => {
                   </svg>
                 </a>
               ) : (
-                project.title
+                t(project.titleKey)
               )}
             </h3>
-            <p className="project-description">{project.description}</p>
+            <p className="project-description">{t(project.descriptionKey)}</p>
             <div className="project-tags">
-              {project.tags.map((tag, tagIndex) => (
-                <span key={tagIndex} className="project-tag">
-                  {getTagIcon(tag)}
+              {project.tags.map((tag) => (
+                <span key={tag} className="project-tag">
+                  <span className="tag-icon">{getTagIcon(tag)}</span>
                   {tag}
                 </span>
               ))}

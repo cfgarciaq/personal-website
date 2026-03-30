@@ -1,17 +1,18 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Contact.css';
 import { GitHub, LinkedIn } from '../../common/TechLogos/TechLogos';
 import { SOCIAL_LINKS } from '../../../constants/Links.ts';
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
-        <h2 className="contact-title">Get In Touch</h2>
+        <h2 className="contact-title">{t('contact.title')}</h2>
         <p className="contact-description">
-          I'm always open to new opportunities and collaborations. 
-          Whether you have a question or just want to say hi, 
-          I'll try my best to get back to you!
+          {t('contact.description')}
         </p>
         
         <div className="social-buttons">

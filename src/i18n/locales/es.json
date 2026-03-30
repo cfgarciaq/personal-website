@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "subtitle": "Desarrollo aplicaciones web modernas enfocadas en la funcionalidad y el rendimiento",
+    "cta": "Ver mis proyectos"
+  },
+  "about": {
+    "title": "Sobre mi trabajo",
+    "description1": "Soy un desarrollador de software que valora la transparencia y el trabajo bien hecho. Me especializo en crear soluciones digitales donde la precisión técnica y la facilidad de uso van de la mano. No busco solo escribir código, sino entregar herramientas que funcionen de verdad.",
+    "description2": "Mi base técnica en .NET me permite construir estructuras sólidas, mientras que mi interés por el frontend moderno me ayuda a crear interfaces claras y fluidas. Me gusta involucrarme en el proyecto y asegurar que cada detalle sea realista y mantenible.",
+    "coreStack": "Stack de Desarrollo",
+    "toolsInfra": "Infraestructura",
+    "aiAgentic": "IA y Flujos Agénticos (Eficiencia)",
+    "modernCss": "CSS y UI"
+  },
+  "projects": {
+    "title": "Proyectos realizados",
+    "status": {
+      "production": "En Producción",
+      "legacy": "Proyecto Personal",
+      "academic": "Hito Académico"
+    },
+    "items": {
+      "smartRepair": {
+        "title": "SMART REPAIR",
+        "description": "Sistema de gestión para servicios técnicos. Desarrollado con .NET 8 y React 19. Utilicé flujos de trabajo agénticos (Kilo Code) para optimizar la arquitectura y asegurar un código limpio y escalable."
+      },
+      "portfolio": {
+        "title": "Portafolio Técnico",
+        "description": "Exploración de React 19 y TypeScript. Este sitio es un ejercicio de transparencia técnica, mostrando cómo utilizo variables CSS dinámicas para lograr un rendimiento óptimo."
+      },
+      "advergame": {
+        "title": "Interactivo Kinect",
+        "description": "Desarrollo en C# y Unity utilizando visión artificial. Un proyecto que conecta el movimiento físico con entornos digitales, enfocado en la interacción directa del usuario."
+      },
+      "mobileGame": {
+        "title": "Juego Móvil Accesible",
+        "description": "Proyecto educativo en Unity para niños con discapacidad visual parcial. Enfocado en la utilidad real y en cómo el diseño puede adaptarse a necesidades específicas."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Tienes una idea o un proyecto en mente? Soy transparente en mi forma de trabajar y me encantaría escuchar tu propuesta para ver cómo puedo ayudarte de forma realista."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "present": "Actualidad"
+  }
+}
