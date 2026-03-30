@@ -212,3 +212,29 @@
 .stack-item.copilot:hover .tech-icon {
   color: #fff;
 }
+
+/* Light Theme Refinements */
+.light-theme .stack-item {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.light-theme .stack-item.kilocode:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(0, 113, 227, 0.2);
+  color: var(--primary-color);
+  --logo-kilocode-color: var(--primary-color);
+}
+
+.light-theme .stack-item.kilocode:hover .tech-icon {
+  color: var(--primary-color);
+}
+
+.light-theme .stack-item.copilot:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(0, 113, 227, 0.2);
+  color: var(--primary-color);
+}
+
+.light-theme .stack-item.copilot:hover .tech-icon {
+  color: var(--primary-color);
+}

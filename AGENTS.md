@@ -5,6 +5,7 @@ Personal website and professional portfolio for 2026, designed to showcase proje
 - **Framework:** [React 19](https://react.dev) (TypeScript)
 - **Styling:** Modern Native CSS (CSS Next/Standard)
 - **Build Tool:** [Vite](https://vitejs.dev)
+- **i18n:** [i18next](https://www.i18next.com/) (EN/ES/FR)
 - **Language:** TypeScript (TSX)
 ## Architecture Patterns
 - **Modular Component Structure:** Each component must live in its own directory within `src/components/` or `src/features/`.
@@ -28,6 +29,6 @@ Personal website and professional portfolio for 2026, designed to showcase proje
   - **General Files:** `kebab-case` for non-component files (e.g., `variables.css`, `main.css`).
 - **TypeScript:** Strict typing for props and states. Avoid using `any`.
 ## Current Goal
-- **Task:** Standardize modular architecture and CSS variable usage.
-- **Status:** Completed.
-- **Context:** Transitioned to a modular folder structure where each component has its own directory and uses global CSS variables for consistency.
+- **Task**: Implement Theme Toggle Logic and UI (Dark/Light Mode).
+- **Status**: Completed.
+- **Context**: Implemented a theme management system with `localStorage` persistence and system preference detection. Created a `ThemeToggle` component with smooth transitions and integrated it into the `Navbar` for both desktop and mobile views. Expanded CSS variables to support full light theme overrides.

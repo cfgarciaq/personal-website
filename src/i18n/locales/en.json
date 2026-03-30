@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Building clean, functional, and modern web applications",
+    "cta": "Explore Projects"
+  },
+  "about": {
+    "title": "My Approach",
+    "description1": "I am a software developer committed to building high-quality digital experiences. I believe in transparency and focus on delivering practical, well-engineered solutions. My goal is to ensure that every project is technically sound and easy to maintain.",
+    "description2": "With a background in .NET and a focus on modern Frontend development, I bridge the gap between back-end reliability and clean user interfaces. I enjoy working on projects where I can contribute to the full development cycle.",
+    "coreStack": "Development Stack",
+    "toolsInfra": "Infra & DevOps",
+    "aiAgentic": "AI & Agentic Workflows",
+    "modernCss": "CSS & Modern UI"
+  },
+  "projects": {
+    "title": "Selected Projects",
+    "status": {
+      "production": "Live in Production",
+      "legacy": "Personal Project",
+      "academic": "Academic Milestone"
+    },
+    "items": {
+      "smartRepair": {
+        "title": "SMART REPAIR",
+        "description": "A management system for repair services. Built with .NET 8 and React 19. I leveraged agentic workflows (Kilo Code) to ensure an optimized and clean codebase."
+      },
+      "portfolio": {
+        "title": "Technical Portfolio",
+        "description": "A showcase of React 19 and TypeScript. This site demonstrates my focus on performance and type-safe UI patterns through dynamic CSS manipulation."
+      },
+      "advergame": {
+        "title": "Kinect Interaction",
+        "description": "Interactive system developed with C# and Unity. Bridging physical movement and digital 3D environments using computer vision for engaging experiences."
+      },
+      "mobileGame": {
+        "title": "Accessible Design",
+        "description": "Unity educational project for children with visual impairment. A practical exercise on how UX can be adapted to serve specific inclusive needs."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Looking for a dedicated developer to help with your project? I’m open to new collaborations and I’ll give you an honest perspective on how we can work together."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "present": "Present"
+  }
+}
