@@ -1,57 +1,57 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Sobre Mí",
+    "about": "Sobre mí",
     "projects": "Proyectos",
     "contact": "Contacto"
   },
   "hero": {
-    "subtitle": "Creando experiencias digitales de alto rendimiento",
-    "cta": "Ver Proyectos"
+    "subtitle": "Desarrollo aplicaciones web modernas enfocadas en la funcionalidad y el rendimiento",
+    "cta": "Ver mis proyectos"
   },
   "about": {
-    "title": "Sobre Mí",
-    "description1": "Soy un desarrollador de software enfocado en construir experiencias digitales de alta calidad y rendimiento. Mi enfoque combina la precisión técnica con una estética moderna, asegurando que cada proyecto no solo funcione a la perfección, sino que también proporcione una experiencia de usuario fluida.",
-    "description2": "Con experiencia en .NET y pasión por el desarrollo frontend, me esfuerzo por cerrar la brecha entre la lógica robusta del backend e interfaces de usuario elegantes.",
-    "coreStack": "Stack Principal",
-    "toolsInfra": "Herramientas e Infraestructura",
-    "aiAgentic": "IA y Desarrollo Agéntico",
-    "modernCss": "CSS Moderno"
+    "title": "Sobre mi trabajo",
+    "description1": "Soy un desarrollador de software que valora la transparencia y el trabajo bien hecho. Me especializo en crear soluciones digitales donde la precisión técnica y la facilidad de uso van de la mano. No busco solo escribir código, sino entregar herramientas que funcionen de verdad.",
+    "description2": "Mi base técnica en .NET me permite construir estructuras sólidas, mientras que mi interés por el frontend moderno me ayuda a crear interfaces claras y fluidas. Me gusta involucrarme en el proyecto y asegurar que cada detalle sea realista y mantenible.",
+    "coreStack": "Stack de Desarrollo",
+    "toolsInfra": "Infraestructura",
+    "aiAgentic": "IA y Flujos Agénticos (Eficiencia)",
+    "modernCss": "CSS y UI"
   },
   "projects": {
-    "title": "Proyectos Destacados",
+    "title": "Proyectos realizados",
     "status": {
       "production": "En Producción",
-      "legacy": "Legado / Showcase",
+      "legacy": "Proyecto Personal",
       "academic": "Hito Académico"
     },
     "items": {
       "smartRepair": {
         "title": "SMART REPAIR",
-        "description": "Un sistema de gestión de reparaciones full-stack. Incluye búsqueda avanzada, ordenación y paginación, construido con una API .NET 8 y React 19. Desarrollado utilizando flujos de trabajo agénticos de Kilo Code para una arquitectura optimizada."
+        "description": "Sistema de gestión para servicios técnicos. Desarrollado con .NET 8 y React 19. Utilicé flujos de trabajo agénticos (Kilo Code) para optimizar la arquitectura y asegurar un código limpio y escalable."
       },
       "portfolio": {
-        "title": "Portafolio Web Moderno",
-        "description": "Portafolio personal y vitrina de ingeniería. Una exploración de las características de React 19, seguridad de tipos con TypeScript y patrones de UI de alto rendimiento mediante la manipulación dinámica de variables CSS."
+        "title": "Portafolio Técnico",
+        "description": "Exploración de React 19 y TypeScript. Este sitio es un ejercicio de transparencia técnica, mostrando cómo utilizo variables CSS dinámicas para lograr un rendimiento óptimo."
       },
       "advergame": {
-        "title": "Advergame Interactivo (Kinect + Unity)",
-        "description": "Un sistema interactivo inmersivo que utiliza visión por computadora y el SDK de Kinect para controlar un personaje 3D en entornos 3D. Desarrollado con C# y Unity para cerrar la brecha entre el movimiento físico y la interacción digital."
+        "title": "Interactivo Kinect",
+        "description": "Desarrollo en C# y Unity utilizando visión artificial. Un proyecto que conecta el movimiento físico con entornos digitales, enfocado en la interacción directa del usuario."
       },
       "mobileGame": {
         "title": "Juego Móvil Accesible",
-        "description": "Hito académico enfocado en el diseño inclusivo. Desarrollé un juego educativo para Android en Unity adaptado para niños con discapacidad visual parcial, con pistas visuales de alto contraste y UX especializada."
+        "description": "Proyecto educativo en Unity para niños con discapacidad visual parcial. Enfocado en la utilidad real y en cómo el diseño puede adaptarse a necesidades específicas."
       }
     }
   },
   "contact": {
     "title": "Contacto",
-    "description": "Siempre estoy abierto a nuevas oportunidades y colaboraciones. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡haré todo lo posible por responderte!"
+    "description": "¿Tienes una idea o un proyecto en mente? Soy transparente en mi forma de trabajar y me encantaría escuchar tu propuesta para ver cómo puedo ayudarte de forma realista."
   },
   "footer": {
     "rights": "Todos los derechos reservados."
   },
   "common": {
-    "present": "Presente"
+    "present": "Actualidad"
   }
 }

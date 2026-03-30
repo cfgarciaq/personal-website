@@ -6,47 +6,47 @@
     "contact": "Contact"
   },
   "hero": {
-    "subtitle": "Conception d'expériences numériques de haute performance",
-    "cta": "Découvrir mes projets"
+    "subtitle": "Développement d'applications web modernes, fonctionnelles et performantes",
+    "cta": "Voir mes projets"
   },
   "about": {
-    "title": "À Propos",
-    "description1": "Je suis un développeur logiciel dédié à la création d'expériences numériques performantes et de haute qualité. Mon approche allie rigueur technique et esthétique moderne, pour des projets aussi fluides qu'impeccables techniquement.",
-    "description2": "Fort d'une expertise en .NET et passionné par le développement frontend, je m'attache à faire le pont entre une logique backend robuste et des interfaces utilisateur élégantes.",
-    "coreStack": "Stack Principal",
-    "toolsInfra": "Outils & Infrastructure",
-    "aiAgentic": "IA & Développement Agentique",
+    "title": "Mon Approche",
+    "description1": "Développeur logiciel passionné, je m'attache à construire des solutions numériques de qualité. Mon approche privilégie la transparence et la rigueur technique, avec pour objectif de livrer des projets qui fonctionnent de manière fluide et durable.",
+    "description2": "Fort d'une base technique en .NET et d'un vif intérêt pour le Frontend moderne, je travaille à créer des ponts entre une logique backend solide et des interfaces utilisateurs claires. Je suis investi dans chaque projet pour garantir un résultat réaliste.",
+    "coreStack": "Stack Technique",
+    "toolsInfra": "Outils & Infra",
+    "aiAgentic": "IA & Workflows Agentiques",
     "modernCss": "CSS Moderne"
   },
   "projects": {
-    "title": "Projets Phares",
+    "title": "Réalisations",
     "status": {
       "production": "En Production",
-      "legacy": "Archive / Vitrine",
+      "legacy": "Projet Personnel",
       "academic": "Projet Académique"
     },
     "items": {
       "smartRepair": {
         "title": "SMART REPAIR",
-        "description": "Système full-stack de gestion de réparations. Inclut des fonctions avancées de recherche, tri et pagination. Conçu avec l'API .NET 8 y React 19, en utilisant les flux de travail agentiques de Kilo Code pour une architecture optimisée."
+        "description": "Système de gestion pour services techniques. Conçu avec .NET 8 et React 19. J'ai utilisé des workflows agentiques (Kilo Code) pour optimiser l'architecture et le code."
       },
       "portfolio": {
-        "title": "Portfolio Web Moderne",
-        "description": "Portfolio personnel et vitrine technique. Exploration des fonctionnalités de React 19, de la sécurité des types avec TypeScript et de patterns UI haute performance via la manipulation dynamique de variables CSS."
+        "title": "Portfolio Technique",
+        "description": "Démonstration technique utilisant React 19 et TypeScript. Ce site illustre mon focus sur la performance grâce à la manipulation dynamique de variables CSS."
       },
       "advergame": {
-        "title": "Advergame Interactif (Kinect + Unity)",
-        "description": "Système interactif immersif exploitant la vision par ordinateur et le SDK Kinect pour piloter un personnage 3D. Développé en C# avec Unity pour fusionner mouvement physique et interaction numérique."
+        "title": "Interaction Kinect",
+        "description": "Système interactif développé avec C# et Unity. Utilisation de la vision par ordinateur pour lier mouvement physique et environnement numérique."
       },
       "mobileGame": {
-        "title": "Jeu Mobile Accessible",
-        "description": "Projet académique axé sur le design inclusif. Développement sous Unity d'un jeu éducatif Android adapté aux enfants malvoyants, avec des repères visuels à fort contraste et une UX spécialisée."
+        "title": "Design Inclusif",
+        "description": "Projet éducatif Unity pour enfants malvoyants. Un exemple concret de l'adaptation de l'UX pour répondre à des besoins spécifiques."
       }
     }
   },
   "contact": {
-    "title": "Contact",
-    "description": "Je suis toujours à l'écoute de nouvelles opportunités ou collaborations. Que ce soit pour une question ou simplement pour échanger, je m'efforcerai de vous répondre dans les plus brefs délais !"
+    "title": "Me Contacter",
+    "description": "Vous avez un projet ou une question ? Je suis transparent sur ma façon de travailler et je serai ravi d'échanger avec vous sur vos besoins de manière réaliste."
   },
   "footer": {
     "rights": "Tous droits réservés."
