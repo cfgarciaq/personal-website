@@ -2,13 +2,14 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: var(--nav-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-primary);
   height: 80px;
   display: flex;
   align-items: center;
   width: 100%;
+  transition: background-color var(--transition-fast);
 }
 
 .navbar-container {
@@ -44,6 +45,14 @@
   gap: 2rem;
 }
 
+.nav-controls-desktop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--border-primary);
+}
+
 .nav-links-desktop {
   display: flex;
   gap: 2rem;
@@ -66,8 +75,6 @@
 .language-selector-desktop {
   display: flex;
   gap: 0.5rem;
-  padding-left: 1.5rem;
-  border-left: 1px solid var(--border-primary);
 }
 
 .lang-selector-btn {
@@ -149,10 +156,17 @@
   font-size: 1.5rem;
 }
 
+.nav-controls-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
 .language-selector-mobile {
   display: flex;
   gap: 1rem;
-  margin-top: 1rem;
 }
 
 .language-selector-mobile .lang-selector-btn {

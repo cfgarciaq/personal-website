@@ -66,3 +66,14 @@
   box-shadow: 0 10px 30px -10px rgba(255, 255, 255, 0.1);
   --logo-github-color: #fff;
 }
+
+/* Light Theme Refinements */
+.light-theme .social-button {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.light-theme .social-button.github:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 30px -10px rgba(0, 113, 227, 0.2);
+  --logo-github-color: var(--primary-color);
+}
