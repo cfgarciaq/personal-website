@@ -4,6 +4,10 @@
 The portfolio is a modern React 19 application built with Vite and TypeScript. It features a modular component structure, global CSS variables for styling, and a centralized technology logo system.
 
 ## Last Implemented Features
+- **Theme Toggle Logic and UI**: Implemented a robust dark/light mode system using CSS variables, `localStorage` persistence, and system preference detection.
+- **ThemeToggle Component**: Created a reusable `ThemeToggle` component with smooth SVG transitions and accessible labels.
+- **Navbar Integration**: Integrated the theme toggle into the `Navbar` for both desktop and mobile views, ensuring consistent UI across all devices.
+- **CSS Variable Expansion**: Expanded `variables.css` to include comprehensive light theme overrides, ensuring all UI elements adapt correctly to theme changes.
 - **i18n Content Refinement**: Updated translation files (`en.json`, `es.json`, `fr.json`) with more professional and concise copy across all sections (Hero, About, Projects, Contact).
 - **Navbar Style Refinement**: Enhanced the `LanguageSelector` buttons with a subtle border and hover effects for better visual feedback and consistency with the overall UI.
 - **100% Translation Coverage**: Migrated Hero, Projects, and Contact sections to `i18next`. All UI strings, including project descriptions and status badges, are now localized in EN, ES, and FR.
@@ -47,4 +51,4 @@ The portfolio is a modern React 19 application built with Vite and TypeScript. I
 ## Git Flow
 - **Main Branch:** Production-ready code.
 - **Develop Branch:** Integration branch.
-- **Feature Branches**: `smart-repair` (current).
+- **Feature Branches**: `feature/light-dark-mode` (current).

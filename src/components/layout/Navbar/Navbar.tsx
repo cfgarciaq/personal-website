@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { ThemeToggle } from '../../common/ThemeToggle/ThemeToggle';
 import './Navbar.css';
 
 // --- Sub-components (Internal to Navbar for better maintainability) ---
@@ -99,7 +100,10 @@ const Navbar: React.FC = () => {
         {/* Desktop Navigation */}
         <div className="nav-desktop-menu">
           <NavLinks className="nav-links-desktop" />
-          <LanguageSelector className="language-selector-desktop" />
+          <div className="nav-controls-desktop">
+            <ThemeToggle />
+            <LanguageSelector className="language-selector-desktop" />
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -141,7 +145,10 @@ const Navbar: React.FC = () => {
         {/* Mobile Navigation Overlay */}
         <div className={`nav-mobile-menu ${isOpen ? 'active' : ''}`}>
           <NavLinks onLinkClick={closeMenu} className="nav-links-mobile" />
-          <LanguageSelector onLanguageChange={closeMenu} className="language-selector-mobile" />
+          <div className="nav-controls-mobile">
+            <ThemeToggle />
+            <LanguageSelector onLanguageChange={closeMenu} className="language-selector-mobile" />
+          </div>
         </div>
       </div>
     </nav>

@@ -10,6 +10,7 @@
   --text-primary: #ffffff;
   --text-secondary: #86868b;
   --text-muted: #86868b;
+  --nav-bg: rgba(5, 5, 5, 0.8);
   --accent-gradient: linear-gradient(135deg, #0071e3 0%, #00d4ff 100%);
   
   /* Spacing */
@@ -50,4 +51,16 @@
   --color-android: #34A853;
   --color-android-eyes: #202124;
   --color-linkedin: #0A66C2;
+}
+
+.light-theme {
+  --bg-color: #ffffff;
+  --bg-accent: rgba(255, 255, 255, 0.8);
+  --surface-color: #f5f5f7;
+  --text-main: #1d1d1f;
+  --text-primary: #1d1d1f;
+  --text-secondary: #48484a;
+  --text-muted: #86868b;
+  --border-primary: rgba(0, 0, 0, 0.1);
+  --nav-bg: rgba(255, 255, 255, 0.8);
 }

@@ -29,6 +29,6 @@ Personal website and professional portfolio for 2026, designed to showcase proje
   - **General Files:** `kebab-case` for non-component files (e.g., `variables.css`, `main.css`).
 - **TypeScript:** Strict typing for props and states. Avoid using `any`.
 ## Current Goal
-- **Task**: Implement internationalization (i18n) for EN/ES/FR.
+- **Task**: Implement Theme Toggle Logic and UI (Dark/Light Mode).
 - **Status**: Completed.
-- **Context**: Achieved 100% translation coverage across all sections (Hero, About, Projects, Contact, Navbar, Footer). Refactored Navbar for better maintainability and integrated a minimal language selector.
+- **Context**: Implemented a theme management system with `localStorage` persistence and system preference detection. Created a `ThemeToggle` component with smooth transitions and integrated it into the `Navbar` for both desktop and mobile views. Expanded CSS variables to support full light theme overrides.
